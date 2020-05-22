@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+  <meta charset="utf-8">
+  <link href="https://fonts.googleapis.com/css2?family=Averia+Serif+Libre&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+  <title>Rock Paper Scissors</title>
+  <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+
+  <div class="wrapper">
+    <div class="header">
+      <div class="heading">
+        <h1>Rock, Paper & Scissors</h1>
+      </div>
+      <div class="line"></div>
+      <div class="score">
+        <h2>Score Board</h2>
+        <div class="scoreLine"></div>
+        <div id="innerScore">
+          <div class="user">
+            <h4>User</h4>
+            <p class="lead" id="userScore">0</p>
+          </div>
+          <div class="scoreLine"></div>
+          <div class="computer">
+            <h4>Computer</h4>
+            <p class="lead" id="compScore">0</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="objects" id="objects">
+    <div class="items" id='r'>
+      <img src="./rock.png" alt="">
+    </div>
+    <div class="items" id='s'>
+      <img src="./sci.png" alt="">
+    </div>
+    <div class="items" id='p'>
+      <img src="./paper.png" alt="">
+    </div>
+  </div>
+
+
+
+  <div class="result" id="result">
+    <div id="resultImage">
+      <div id="userResult">
+      </div>
+      <div id="compResult">
+      </div>
+    </div>
+    <div>
+      <h1 id="resultText">Tie!</h1>
+    </div>
+
+    <div>
+      <button type="button" name="button" onclick="playAgain()" class="btn btn-primary">Play Again</button>
+      <button type="button" name="button" onclick="resetScore()" class="btn btn-warning">Reset Score</button>
+    </div>
+  </div>
+
+
+
+  <footer id="footer"><div>Icons made by <a href="https://www.flaticon.com/authors/freepik" title="Freepik">Freepik</a> from <a href="https://www.flaticon.com/" title="Flaticon">www.flaticon.com</a></div></footer>
+  <script type="text/javascript" src="./index.js">
+  </script>
+</body>
+</html>
